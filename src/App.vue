@@ -1,14 +1,16 @@
 <template>
   <div id="app">
-    <van-button type="default">默认按钮</van-button>
-    <van-button type="warning">警告按钮</van-button>
+    <OneTab></OneTab>
   </div>
 </template>
 
 <script>
-
+import OneTab from './components/OneTab.vue';
 export default {
   name: 'App',
+  components:{
+    OneTab
+  }
 }
 </script>
 
@@ -20,6 +22,5 @@ export default {
 #app{
   width: 750px;
   height: 100px;
-  background: #f00;
 }
 </style>
